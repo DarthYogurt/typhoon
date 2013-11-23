@@ -22,7 +22,8 @@
         android:layout_alignLeft="@+id/textView1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="97dp"
-        android:text="Go to Next Page" />
+        android:text="Go to Next Page"
+        android:onClick="sendMessage" />
 
     <EditText
         android:id="@+id/batmanText"
@@ -52,6 +53,7 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="62dp"
-        android:text="Call ToastBox" />
+        android:text="Call ToastBox" 
+        android:onClick="callToastBox"/>
 
 </RelativeLayout>
