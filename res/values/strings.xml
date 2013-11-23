@@ -4,5 +4,8 @@
     <string name="app_name">typhoon</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="superman_text"> SUPERMAN</string>
+    <string name="batman_text"> BATMAN</string>
+    <string name="input_message">Input your message here</string>
 
 </resources>

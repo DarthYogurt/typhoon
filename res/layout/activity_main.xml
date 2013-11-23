@@ -9,8 +9,39 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/supermanText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/superman_text" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="97dp"
+        android:text="Button" />
+
+    <EditText
+        android:id="@+id/batmanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="14dp"
+        android:hint="@string/input_message"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/supermanText"
+        android:layout_below="@+id/supermanText"
+        android:layout_marginTop="29dp"
+        android:hint="@string/batman_text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
