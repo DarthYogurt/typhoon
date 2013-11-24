@@ -8,6 +8,7 @@
     <string name="batman_text"> BATMAN</string>
     <string name="input_message">Input your message here</string>
     <string name="title_activity_display_message">DisplayMessageActivity</string>
+    <string name="hint_username">username</string>
 	
     
 </resources>

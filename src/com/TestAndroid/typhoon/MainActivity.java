@@ -10,7 +10,8 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	static final String EXTRA_MESSAGE = null;
+	public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+	public static final String USERNAME = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +32,20 @@ public class MainActivity extends Activity {
 	
 	public void sendMessage(View view){
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
+		
+		//Send what's in the text field
 		EditText batmanText = (EditText) findViewById(R.id.batmanText);
 		String message = batmanText.getText().toString();
 		intent.putExtra(EXTRA_MESSAGE, message);
 		
 		
+		//Now send username
+		EditText username = (EditText) findViewById(R.id.username);
+		String messageUsername = username.getText().toString();
+		intent.putExtra(USERNAME, messageUsername);
+		
+		
+		startActivity(intent);
 	}
 
 	

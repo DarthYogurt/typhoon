@@ -11,25 +11,28 @@ public class DisplayMessageActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		Intent intent = getIntent();
-		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 		
+		super.onCreate(savedInstanceState);
+		Intent intent = getIntent();
+		
+		
+		String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
 		TextView textView = new TextView(this);
 	    textView.setTextSize(40);
 	    textView.setText(message);
+	    setContentView(textView);
+	    
+		String message1 = intent.getStringExtra(MainActivity.USERNAME);
+		TextView usernameView = new TextView(this);
+		usernameView.setTextSize(40);
+		usernameView.setText(message);
 
 	    // Set the text view as the activity layout
-	    setContentView(textView);
+	    
+	    setContentView(usernameView);
 	}
 
-	/**
-	 * Set up the {@link android.app.ActionBar}.
-	 */
-	private void setupActionBar() {
-
-		getActionBar().setDisplayHomeAsUpEnabled(true);
-
-	}
+	
 
 /*	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
