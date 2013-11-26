@@ -27,9 +27,11 @@ public class DisplayMessageActivity extends Activity {
 		usernameView.setTextSize(40);
 		usernameView.setText(message);
 
+	    
+	    TextView mTextView = (TextView) findViewById(R.id.username);
 	    // Set the text view as the activity layout
 	    
-	    setContentView(usernameView);
+	    //setContentView(mTextView);
 	}
 
 	
@@ -57,5 +59,7 @@ public class DisplayMessageActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+
 
 }
